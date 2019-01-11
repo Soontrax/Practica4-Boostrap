@@ -25,7 +25,7 @@ img {
 }
 
 .photos-brand:hover img {
-    opacity: 0.1;
+    opacity: 0.3;
 }
 
 .photos-brand {
@@ -42,6 +42,10 @@ img {
 
 .photos:hover img {
     transform: scale(1.1);
+}
+
+.form-wrapper{
+    width: 280px;
 }
 
 @media only screen and (max-height: 600px) {
