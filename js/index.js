@@ -36,7 +36,7 @@ function cambioImagen() {
     start = 1;
     i = "img/anuncios/anuncio-1.jpg";
   }
-  document.getElementById("anuncio").src=""+i;
+  document.getElementById("anuncio").src = "" + i;
   start++;
 }
 //----------------------------------------------------------//
