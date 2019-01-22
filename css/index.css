@@ -1,12 +1,4 @@
-#navbar {
-    transition: 0.4s;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-    top: 0;
-}
-
-#navbar #logo {
+#logo {
     font-size: 35px;
     font-weight: bold;
     transition: 0.4s;
@@ -47,14 +39,6 @@ img {
 
 .form-wrapper{
     width: 280px;
-}
-
-@media only screen and (max-height: 600px) {
-    #logotipo {
-        width: 30px;
-        height: 30px;
-        transition: 1s;
-    }
 }
 
 /*Footer*/

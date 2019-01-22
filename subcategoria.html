@@ -30,76 +30,74 @@
 
 <body>
 
-    <div id="navbar">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <a class="navbar-brand" href="index.html" id="logo">Logo
-                <!---<img id="logotipo" src="img/logo-pequeño.png" width="100" height="100">-->
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Empresa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Referencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Instalaciones</a>
-                    </li>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html" id="logo">Logo
+            <!---<img id="logotipo" src="img/logo-pequeño.png" width="100" height="100">-->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Referencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Instalaciones</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mantenimiento</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mantenimiento</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingeniería</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ingeniería</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Renovables</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Renovables</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Notícias</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notícias</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
 
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Identifícate/Regístrate</button>
-                        <div class="dropdown-menu form-wrapper px-4 py-4">
-                            <p>Conectate con tus redes sociales </p>
-                            <div class="row d-flex justify-content-around">
-                                <button type="button" class="btn btn-primary"><i class="fa fa-facebook-square fa-lg"></i>Facebook</button>
-                                <button type="button" class="btn btn-info"><i class="fa fa-twitter fa-lg"></i>Twitter</button>
-                            </div>
-                            <div class="row d-flex d-flex justify-content-center">
-                                <b>OR</b>
-                            </div>
-                            <input type="email" class="form-control" placeholder="Usuario">
-                            <input type="password" class="form-control mt-4" placeholder="Contraseña">
-                            <a href="login.html" class="btn btn-primary w-100 mt-4">Iniciar Sesión</a>
-                            <p class="text-center mt-4 mb-2">¿Nuevo cliente?</p>
-                            <a href="register.html" class="btn btn-primary w-100">Regístrate</a>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLogin" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Identifícate/Regístrate</button>
+                    <div class="dropdown-menu form-wrapper px-4 py-4">
+                        <p>Conectate con tus redes sociales </p>
+                        <div class="row d-flex justify-content-around">
+                            <button type="button" class="btn btn-primary"><i class="fa fa-facebook-square fa-lg"></i>Facebook</button>
+                            <button type="button" class="btn btn-info"><i class="fa fa-twitter fa-lg"></i>Twitter</button>
                         </div>
-                    </li>
-                </ul>
+                        <div class="row d-flex d-flex justify-content-center">
+                            <b>OR</b>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Usuario">
+                        <input type="password" class="form-control mt-4" placeholder="Contraseña">
+                        <a href="login.html" class="btn btn-primary w-100 mt-4">Iniciar Sesión</a>
+                        <p class="text-center mt-4 mb-2">¿Nuevo cliente?</p>
+                        <a href="register.html" class="btn btn-primary w-100">Regístrate</a>
+                    </div>
+                </li>
+            </ul>
 
-                <button class="btn btn-warning" data-toggle="modal" data-target="#cestaModal">
-                    <i class="	fa fa-shopping-bag"></i> Cesta <span class="badge badge-light">5</span>
-                </button>
-            </div>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#cestaModal">
+                <i class="	fa fa-shopping-bag"></i> Cesta <span class="badge badge-light">5</span>
+            </button>
+        </div>
 
-        </nav>
-    </div>
+    </nav>
 
     <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -177,7 +175,6 @@
         </div>
     </div>
 
-    <br>
     <br>
     <br>
     <div class="container-fluid mt-5">
@@ -310,11 +307,15 @@
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6">
                                         <div class="card photos">
-                                            <img class="card-img-top" src="img/codos-laton/laton-1.jpg" alt="Card image cap">
+                                            <a href="producto.html">
+                                                <img class="card-img-top" src="img/codos-laton/laton-1.jpg" alt="Card image cap">
+                                            </a>
                                             <div class="card-body">
                                                 <h5 class="card-title">CODO M-M CON VALONA - FIG.94</h5>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                                <p class="card-text text-right"><small class="text-muted">Ver más [+]</small></p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                                <p class="card-text text-right"><small class="text-muted">Ver más
+                                                        [+]</small></p>
                                             </div>
                                         </div>
                                     </div>
@@ -348,11 +349,15 @@
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6">
                                         <div class="card photos">
-                                            <img class="card-img-top" src="img/codos-laton/laton-1.jpg" alt="Card image cap">
+                                            <a href="producto.html">
+                                                <img class="card-img-top" src="img/codos-laton/laton-1.jpg" alt="Card image cap">
+                                            </a>
                                             <div class="card-body">
                                                 <h5 class="card-title">CODO M-M CON VALONA - FIG.94</h5>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                                <p class="card-text text-right"><small class="text-muted">Ver más [+]</small></p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                                <p class="card-text text-right"><small class="text-muted">Ver más
+                                                        [+]</small></p>
                                             </div>
                                         </div>
                                     </div>
@@ -386,11 +391,15 @@
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6">
                                         <div class="card photos">
-                                            <img class="card-img-top" src="img/codos-laton/laton-1.jpg" alt="Card image cap">
+                                            <a href="producto.html">
+                                                <img class="card-img-top" src="img/codos-laton/laton-1.jpg" alt="Card image cap">
+                                            </a>
                                             <div class="card-body">
                                                 <h5 class="card-title">CODO M-M CON VALONA - FIG.94</h5>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                                <p class="card-text text-right"><small class="text-muted">Ver más [+]</small></p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                                <p class="card-text text-right"><small class="text-muted">Ver más
+                                                        [+]</small></p>
                                             </div>
                                         </div>
                                     </div>
