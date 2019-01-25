@@ -8,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 
+    <!--Elevate zoom Plugin of Jquery-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
+    <script src="js/index.js"></script>
+
     <link rel="shortcut icon" href="img/icon.ico">
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
@@ -23,6 +27,7 @@
 
     <!--FONT AWESOME LINK CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 </head>
@@ -183,46 +188,225 @@
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Library</li>
         </ol>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/codos-laton/laton-1.jpg">
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="img_01" src="img/codos-laton/laton-1.jpg" data-zoom-image="img/codos-laton/laton-HD.jpg">
+            </div>
+
+            <div class="col-md-6">
+                <h2>Rosca</h2>
+                <div class="row">
+                    <i class="fa fa-star fa-2x" style="color: gold"></i>
+                    <i class="fa fa-star fa-2x" style="color: gold"></i>
+                    <i class="fa fa-star fa-2x" style="color: gold"></i>
+                    <i class="fa fa-star fa-2x" style="color: gold"></i>
+                    <i class="fa fa-star-o fa-2x" style="color: gold"></i>
+                </div>
+                <hr>
+                <div class="border border-dark p-4 jumbotron">
+                    <div class="row mt-2 d-flex align-items-center">
+                        <h6>Precio: </h6>
+                        <h3 class="ml-3">19,99€</h3>
+                        <span class="ml-3">Envio Gratis</span>
+                    </div>
+
+                    <div class="row mt-2 d-flex align-items-center">
+                        <h6>Envio: </h6>
+                        <h3 class="ml-3">1,49€</h3>
+                        <span class="ml-3">Envio Gratis</span>
+                    </div>
+
+                    <div class="row mt-2 d-flex align-items-center">
+                        <h6>Cantidad: </h6>
+                        <h3 class="ml-3">1,49€</h3>
+                        <span class="ml-3">unidad (3906 unidades disponible)</span>
+                    </div>
+
                 </div>
 
-                <div class="col-md-6">
-                    <h2>Rosca</h2>
-                    <img src="img/5-estrellas.png" style="width: 150px">
-                    <hr>
-                    <div class="border border-dark p-4 jumbotron">
-                        <div class="row mt-2 d-flex align-items-center">
-                            <h6>Precio: </h6>
-                            <h3 class="ml-3">19,99€</h3>
-                            <span class="ml-3">Envio Gratis</span>
-                        </div>
-
-                        <div class="row mt-2 d-flex align-items-center">
-                            <h6>Envio: </h6>
-                            <h3 class="ml-3">1,49€</h3>
-                            <span class="ml-3">Envio Gratis</span>
-                        </div>
-
-                        <div class="row mt-2 d-flex align-items-center">
-                            <h6>Cantidad: </h6>
-                            <h3 class="ml-3">1,49€</h3>
-                            <span class="ml-3">unidad (3906 unidades disponible)</span>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-9 row d-flex justify-content-around">
-                        <button type="button" class="btn btn-warning btn-lg">Comprar</button>
-                        <button type="button" class="btn btn-danger btn-lg">Añadir a la cesta</button>
-                    </div>
-
+                <div class="col-sm-9 row d-flex justify-content-around">
+                    <button type="button" class="btn btn-warning btn-lg">Comprar</button>
+                    <button type="button" class="btn btn-danger btn-lg">Añadir a la cesta</button>
                 </div>
 
             </div>
+
         </div>
+    </div>
+
+    <div class="container text-center">
+        <hr>
+        <div class="text-center">
+            <h3>Opiniones de los usuarios</h3>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="col-sm-8 border rounded text-center">
+                    <h1>4/5</h1>
+                    <div class="row d-flex justify-content-center">
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star-o" style="color: gold"></i>
+                    </div>
+                    <h3>824 opiniones</h3>
+                    <p>681 usuarios recomiendan este producto</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="jumbotron col-sm-12">
+                    <div class="d-flex justify-content-start">
+                        <i class="fa fa-user fa-fw fa-2x"></i>Josemari
+                    </div>
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star-o" style="color: gold"></i>
+                        <b class="ml-2">Buena compra</b>
+                    </div>
+                    <div class="row">
+                        27 de octubre de 2018
+                    </div>
+
+                    <div class="row text-left">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit viverra mus, primis placerat
+                            condimentum
+                            laoreet phasellus hendrerit proin potenti aenean risus, facilisis penatibus felis cras
+                            pretiumt</p>
+                    </div>
+
+                    <div class="row">
+                        A 2 personas les ha parecido esto útil
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <button class="btn btn-light btn-lg">Comentar</button>
+                        <i class="fa fa-thumbs-up fa-2x ml-2" style="color: green"></i>
+                        <i class="fa fa-thumbs-down fa-2x ml-2" style="color: red"></i>
+                        <button class="btn btn-light ml-5">Informar de un abuso</button>
+                    </div>
+                </div>
+
+                <div class="jumbotron col-sm-12">
+                    <div class="d-flex justify-content-start">
+                        <i class="fa fa-user fa-fw fa-2x"></i>Josemari
+                    </div>
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star-o" style="color: gold"></i>
+                        <b class="ml-2">Buena compra</b>
+                    </div>
+                    <div class="row">
+                        27 de octubre de 2018
+                    </div>
+
+                    <div class="row text-left">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit viverra mus, primis placerat
+                            condimentum
+                            laoreet phasellus hendrerit proin potenti aenean risus, facilisis penatibus felis cras
+                            pretiumt</p>
+                    </div>
+
+                    <div class="row">
+                        A 2 personas les ha parecido esto útil
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <button class="btn btn-light btn-lg">Comentar</button>
+                        <i class="fa fa-thumbs-up fa-2x ml-2" style="color: green"></i>
+                        <i class="fa fa-thumbs-down fa-2x ml-2" style="color: red"></i>
+                        <button class="btn btn-light ml-5">Informar de un abuso</button>
+                    </div>
+                </div>
+
+                <div class="jumbotron col-sm-12">
+                    <div class="d-flex justify-content-start">
+                        <i class="fa fa-user fa-fw fa-2x"></i>Josemari
+                    </div>
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star-o" style="color: gold"></i>
+                        <b class="ml-2">Buena compra</b>
+                    </div>
+                    <div class="row">
+                        27 de octubre de 2018
+                    </div>
+
+                    <div class="row text-left">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit viverra mus, primis placerat
+                            condimentum
+                            laoreet phasellus hendrerit proin potenti aenean risus, facilisis penatibus felis cras
+                            pretiumt</p>
+                    </div>
+
+                    <div class="row">
+                        A 2 personas les ha parecido esto útil
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <button class="btn btn-light btn-lg">Comentar</button>
+                        <i class="fa fa-thumbs-up fa-2x ml-2" style="color: green"></i>
+                        <i class="fa fa-thumbs-down fa-2x ml-2" style="color: red"></i>
+                        <button class="btn btn-light ml-5">Informar de un abuso</button>
+                    </div>
+                </div>
+
+                <div class="jumbotron col-sm-12">
+                    <div class="d-flex justify-content-start">
+                        <i class="fa fa-user fa-fw fa-2x"></i>Josemari
+                    </div>
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star" style="color: gold"></i>
+                        <i class="fa fa-star-o" style="color: gold"></i>
+                        <b class="ml-2">Buena compra</b>
+                    </div>
+                    <div class="row">
+                        27 de octubre de 2018
+                    </div>
+
+                    <div class="row text-left">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit viverra mus, primis placerat
+                            condimentum
+                            laoreet phasellus hendrerit proin potenti aenean risus, facilisis penatibus felis cras
+                            pretiumt</p>
+                    </div>
+
+                    <div class="row">
+                        A 2 personas les ha parecido esto útil
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <button class="btn btn-light btn-lg">Comentar</button>
+                        <i class="fa fa-thumbs-up fa-2x ml-2" style="color: green"></i>
+                        <i class="fa fa-thumbs-down fa-2x ml-2" style="color: red"></i>
+                        <button class="btn btn-light ml-5">Informar de un abuso</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 
 
 
