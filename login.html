@@ -7,9 +7,10 @@
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-    <script src="js/index.js"></script>
 
     <link rel="shortcut icon" href="img/icon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,7 +31,6 @@
 
 <body>
 
-    <div id="navbar">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <a class="navbar-brand" href="index.html" id="logo">Logo
                 <!---<img id="logotipo" src="img/logo-pequeño.png" width="100" height="100">-->
@@ -97,7 +97,6 @@
             </div>
 
         </nav>
-    </div>
 
     <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -175,143 +174,61 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
-
-        <div class="row">
-            <div class="col-md-2 mt-4">
-                <div class="col-md-12">
-                    <h2>Categorías:</h2>
-                    <div class="d-flex flex-column ml-2 mt-4">
-                        <div class="dropdown dropright">
-                            <a href="#" class="text-left btn btn-outline-light text-dark w-100" data-toggle="dropdown">
-                                <h5>Calefacción</h5>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                            </div>
-                        </div>
-                        <a href="#" class="text-left btn btn-outline-light text-dark">
-                            <h5>Cuartos de Baño</h5>
-                        </a>
-                        <a href="#" class="text-left btn btn-outline-light text-dark">
-                            <h5>Piscina</h5>
-                        </a>
-
-                        <a href="#" class="text-left btn btn-outline-light text-dark">
-                            <h5>Tuberías</h5>
-                        </a>
-
-                        <div class="dropdown dropright">
-                            <a href="#" class="text-left btn btn-outline-light text-dark w-100" data-toggle="dropdown">
-                                <h5>Bombas de Agua</h5>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-10 mt-4">
-                <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card img-fluid d-flex justify-content-center align-items-center" style="width:350px">
-                            <div class="photos">
-                                <img class="card-img-top" src="img/categoria/tapon.jpg" alt="Card image" style="width:100%">
-                                <div class="card-img-overlay d-flex justify-content-end align-items-flex-start">
-                                    <h3><span class="badge badge-pill badge-warning">Tapones</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card img-fluid d-flex justify-content-center align-items-center" style="width:350px">
-                            <div class="photos">
-
-                                <img class="card-img-top" src="img/categoria/Y.jpg" alt="Card image" style="width:100%">
-                                <div class="card-img-overlay d-flex justify-content-end align-items-flex-start">
-                                    <h3><span class="badge badge-pill badge-warning">Sifones Dobles</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card img-fluid d-flex justify-content-center align-items-center" style="width:350px">
-                            <div class="photos">
-
-                                <img class="card-img-top" src="img/categoria/manguito.jpg" alt="Card image" style="width:100%">
-                                <div class="card-img-overlay d-flex justify-content-end align-items-flex-start">
-                                    <h3><span class="badge badge-pill badge-warning">Manguitos</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card img-fluid d-flex justify-content-center align-items-center" style="width:350px">
-                            <div class="photos">
-
-                                <img class="card-img-top" src="img/categoria/TE.jpg" alt="Card image" style="width:100%">
-                                <div class="card-img-overlay d-flex justify-content-end align-items-flex-start">
-                                    <h3><span class="badge badge-pill badge-warning">Tes</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-md-3">
-                        <div class="card img-fluid d-flex justify-content-center align-items-center" style="width:350px">
-                            <div class="photos">
-
-                                <img class="card-img-top" src="img/categoria/codo.png" alt="Card image" style="width:100%">
-                                <div class="card-img-overlay d-flex justify-content-end align-items-flex-start">
-                                    <a href="subcategoria.html">
-                                        <h3><span class="badge badge-pill badge-warning">Codos</span></h3>
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card img-fluid d-flex justify-content-center align-items-center" style="width:350px">
-                            <div class="photos">
-
-                                <img class="card-img-top" src="img/categoria/valvula-esfera.jpg" alt="Card image" style="width:100%">
-                                <div class="card-img-overlay d-flex justify-content-end align-items-flex-start">
-                                    <h3><span class="badge badge-pill badge-warning">Válvula Esfera</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+    <div class="d-flex justify-content-center">
+        <div class="col-sm-1">
+            <img src="img/Logo.png">
         </div>
-
     </div>
 
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="col-md-6 border shadow p-3 mb-5 bg-white rounded">
+            <div class="row d-flex justify-content-around">
+                <a href="login.html">
+                    <h3>Iniciar Sesión</h3>
+                </a>
+                <a href="registro.html">
+                    <h3>Registrarse</h3>
+                </a>
+            </div>
 
+            <hr>
 
+            <form>
+                <div class="p-2">
+                    <div class="form-group d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control animated fadeIn retraso-1s" placeholder="Email">
+                        </div>
+
+                    </div>
+                    <div class="form-group form-group d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <input type="password" class="form-control animated fadeIn retraso-2s" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-check row d-flex justify-content-center mb-3">
+
+                        <div class="col-sm-4">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">Recuérdame</label>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <small><a href="#">Olvidaste tu Contraseña </a></small>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-7">
+                            <button type="submit" class="btn btn-info btn-lg btn-block">Iniciar Sesión</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
-
-
-
-
-</body>
-
-</html>>
