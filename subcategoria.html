@@ -30,8 +30,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html" id="logo">Logo
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html" id="logo">Fontaneros Nucleares
             <!---<img id="logotipo" src="img/logo-pequeño.png" width="100" height="100">-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -91,7 +91,7 @@
             </ul>
 
             <button class="btn btn-warning" data-toggle="modal" data-target="#cestaModal">
-                <i class="	fa fa-shopping-bag"></i> Cesta <span class="badge badge-light">5</span>
+                <i class="	fa fa-shopping-bag"></i> Cesta <span class="badge badge-light">2</span>
             </button>
         </div>
 
@@ -117,8 +117,12 @@
                                     <button type="button" class="close">
                                         <span aria-hidden="true">×</span>
                                     </button>
-                                    <h5>Producto 1 <span class="badge badge-secondary">24.99€</span></h5>
-                                    <p>Pequeña descripción del producto</p>
+                                    <div class="row d-flex justify-content-between">
+                                        <h5><img src="img/compra-1.png" style="width: 80px;"></h5>
+                                        <h5><span class="badge badge-secondary">45.99€</span></h5>
+                                    </div>
+                                    <h4>Grifo acero inoxidable</h4>
+                                </td>
                                 </td>
                             </tr>
                             <tr>
@@ -127,38 +131,12 @@
                                     <button type="button" class="close">
                                         <span aria-hidden="true">×</span>
                                     </button>
-                                    <h5>Producto 2 <span class="badge badge-secondary">10.29€</span></h5>
-                                    <p>Pequeña descripción del producto</p>
+                                    <div class="row d-flex justify-content-between">
+                                        <h5><img src="img/compra-2.png" style="width: 80px;"></h5>
+                                        <h5><span class="badge badge-secondary">45.99€</span></h5>
+                                    </div>
+                                    <h4>Grifo acero inoxidable</h4>
                                 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>
-                                    <button type="button" class="close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                    <h5>Producto 3 <span class="badge badge-secondary">4.59€</span></h5>
-                                    <p>Pequeña descripción del producto</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>
-                                    <button type="button" class="close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                    <h5>Producto 2 <span class="badge badge-secondary">10.29€</span></h5>
-                                    <p>Pequeña descripción del producto</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>
-                                    <button type="button" class="close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                    <h5>Producto 2 <span class="badge badge-secondary">10.29€</span></h5>
-                                    <p>Pequeña descripción del producto</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -173,9 +151,15 @@
         </div>
     </div>
 
-    <br>
-    <br>
-    <div class="container-fluid mt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="categoria.html">Categoría</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Subcategoría</li>
+        </ol>
+    </nav>
+
+    <div class="container-fluid">
 
         <div class="row d-flex justify-content-end mr-4">
             <b class="mt-1 mr-3">Ordenar Por: </b>
@@ -737,6 +721,22 @@
                         </div>
                     </div>
                 </div>
+
+                <nav aria-label="...">
+                    <ul class="pagination justify-content-end mt-4">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
 

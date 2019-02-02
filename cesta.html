@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script src="js/index.js"></script>
 
     <link rel="shortcut icon" href="img/icon.ico">
 
@@ -31,7 +32,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html" id="logo">Fontaneros Nucleares
             <!---<img id="logotipo" src="img/logo-pequeño.png" width="100" height="100">-->
         </a>
@@ -98,7 +99,6 @@
 
     </nav>
 
-
     <div class="modal fade" id="cestaModal" tabindex="-1" role="dialog" aria-labelledby="cestaModalTitulo" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -134,7 +134,7 @@
                                         <span aria-hidden="true">×</span>
                                     </button>
                                     <div class="row d-flex justify-content-between">
-                                        <h5><img src="img/compra-1.png" style="width: 80px;"></h5>
+                                        <h5><img src="img/compra-2.png" style="width: 80px;"></h5>
                                         <h5><span class="badge badge-secondary">45.99€</span></h5>
                                     </div>
                                     <h4>Grifo acero inoxidable</h4>
@@ -153,76 +153,82 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-center">
-        <div class="col-sm-1">
-            <img src="img/Logo.png" class="animated fadeIn">
-        </div>
-    </div>
+    <div class="d-flex justify-content-center container">
 
-    <div class="container mt-5 d-flex justify-content-center">
-        <div class="col-md-6 border shadow p-3 mb-5 bg-white rounded">
-            <div class="row d-flex justify-content-around">
-                <a href="login.html">
-                    <h3>Iniciar Sesión</h3>
-                </a>
-                <a href="registro.html">
-                    <h3>Registrarse</h3>
-                </a>
+        <div class="col-md-8 mt-5 animated fadeInDown">
+            <div class="container carrito">
+                <h2 class="text-uppercase">shopping cart</h2>
+                <table class="table table-striped border rounded">
+                    <thead>
+                        <tr>
+                            <th class="align-middle text-center border-0">Product</th>
+                            <th class="align-middle text-center border-0">Quantity</th>
+                            <th class="align-middle text-center border-0">Price</th>
+                            <th class="align-middle text-center border-0">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="align-middle border-0">
+                                <img src="img/compra-1.png" style="width: 50px;" class="rounded"> Grifo
+                            </td>
+                            <td class="align-middle d-flex justify-content-center border-0">
+                                <div class="col-md-4">
+                                    <input type="number" value="1" class="form-control quantity-input">
+                                </div>
+
+                            </td>
+                            <td class="align-middle text-center border-0">45,99€</td>
+                            <td class="align-middle text-center border-0"><a class="btn btn-outline-danger" href="#"><i
+                                        class="fa fa-trash" aria-hidden="true"></i></a><a class="btn btn-outline-success m-1"
+                                    href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="align-middle border-0">
+                                <img src="img/compra-2.png" style="width: 50px;">
+                                Set piezas </td>
+                            <td class="align-middle d-flex justify-content-center border-0">
+                                <div class="col-md-4">
+                                    <input type="number" value="1" class="form-control quantity-input">
+                                </div>
+
+                            </td>
+                            <td class="align-middle text-center border-0">60€</td>
+                            <td class="align-middle text-center border-0"><a class="btn btn-outline-danger" href="#"><i
+                                        class="fa fa-trash" aria-hidden="true"></i></a><a class="btn btn-outline-success m-1"
+                                    href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-5 rounded animated fadeInDown retraso-2s" style="background-color:#f7fbff">
+            <div class="text-center mb-4 mt-4">
+                <h2>Summary</h2>
             </div>
 
-            <hr>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-4 mt-4">
+                <h4>Subtotal</h4>
+                <span>105,99€</span>
+            </div>
 
-            <form>
-                <div class="p-2">
-                    <div class="form-group d-flex justify-content-center">
-                        <div class="col-md-8">
-                            <input type="email" class="form-control animated fadeIn retraso-1s" placeholder="Email"
-                                value required>
-                        </div>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-4 mt-4">
+                <h4>Descuento</h4>
+                <span>0€</span>
+            </div>
 
-                    </div>
-                    <div class="form-group form-group d-flex justify-content-center">
-                        <div class="col-md-8">
-                            <input type="password" class="form-control animated fadeIn retraso-2s" placeholder="Create Password"
-                                value required>
-                        </div>
-                    </div>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-4 mt-4">
+                <h4>Total</h4>
+                <span>105,99€</span>
+            </div>
 
-                    <div class="form-group form-group d-flex justify-content-center">
-                        <div class="col-md-8">
-                            <input type="password" class="form-control animated fadeIn retraso-3s" placeholder="Confirm Password"
-                                value required>
-                        </div>
-                    </div>
-                    <div class="form-group form-group d-flex justify-content-center">
-
-                        <div class="col-md-7">
-                            <input type="checkbox" class="form-check-input">
-                            <label class="form-check-label">Estoy de acuerdo con esta empresa Política de Privacidad y
-                                Términos y Condiciones</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group form-group d-flex justify-content-center">
-
-                        <div class="col-md-7">
-                            <input type="checkbox" class="form-check-input">
-                            <label class="form-check-label">
-                                Confirmo que toda la información proporcionada es mía; Entiendo y acepto que esta
-                                empresa
-                                lo utiliza </label>
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-7">
-                            <button type="submit" class="btn btn-warning btn-lg btn-block">Registro</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </form>
+            <div class="d-flex justify-content-end mt-4">
+                <button class="btn btn-success">
+                    Pagar €
+                </button>
+            </div>
         </div>
     </div>
 </body>
